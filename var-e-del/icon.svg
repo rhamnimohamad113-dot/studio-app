@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs>
+<radialGradient id="bg" cx="30%" cy="20%" r="95%"><stop offset="0" stop-color="#ffe7f0"/><stop offset=".55" stop-color="#ffc2d6"/><stop offset="1" stop-color="#c9a8ff"/></radialGradient>
+<radialGradient id="body" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#fff6c2"/><stop offset=".55" stop-color="#ffd84d"/><stop offset="1" stop-color="#f5b81c"/></radialGradient>
+<radialGradient id="eye" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#4a3328"/><stop offset="1" stop-color="#1e120c"/></radialGradient>
+</defs>
+<rect width="512" height="512" fill="url(#bg)"/>
+<g opacity=".55" fill="#fff"><circle cx="92" cy="110" r="5"/><circle cx="420" cy="96" r="4"/><circle cx="448" cy="210" r="3"/><circle cx="70" cy="300" r="3"/></g>
+<ellipse cx="256" cy="430" rx="128" ry="18" fill="#a0587a" opacity=".18"/>
+<g transform="translate(0 6)">
+<ellipse cx="214" cy="428" rx="30" ry="12" fill="#ff9a3c"/><ellipse cx="298" cy="428" rx="30" ry="12" fill="#ff9a3c"/>
+<ellipse cx="256" cy="282" rx="150" ry="148" fill="url(#body)"/>
+<path d="M108 300 q-36 -6 -44 -44 q30 -2 58 16 z" fill="#f5b81c"/>
+<path d="M404 300 q36 -6 44 -44 q-30 -2 -58 16 z" fill="#f5b81c"/>
+<path d="M244 140 q-6 -44 22 -60 q-2 26 12 30 q10 -22 34 -20 q-22 18 -18 52 z" fill="#ffd84d"/>
+<ellipse cx="200" cy="264" rx="30" ry="36" fill="url(#eye)"/>
+<ellipse cx="312" cy="264" rx="30" ry="36" fill="url(#eye)"/>
+<circle cx="211" cy="250" r="11" fill="#fff"/><circle cx="323" cy="250" r="11" fill="#fff"/>
+<circle cx="193" cy="280" r="5" fill="#fff" opacity=".8"/><circle cx="305" cy="280" r="5" fill="#fff" opacity=".8"/>
+<ellipse cx="164" cy="318" rx="26" ry="15" fill="#ff8fab" opacity=".75"/>
+<ellipse cx="348" cy="318" rx="26" ry="15" fill="#ff8fab" opacity=".75"/>
+<path d="M236 300 q20 -14 40 0 q-20 28 -40 0z" fill="#ff9a3c"/>
+<path d="M240 304 q16 8 32 0" stroke="#d96f12" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M256 372 c-10 -14 -32 -4 -18 12 l18 16 l18 -16 c14 -16 -8 -26 -18 -12z" fill="#ff5d8a"/>
+<ellipse cx="200" cy="200" rx="40" ry="22" fill="#fff" opacity=".35" transform="rotate(-25 200 200)"/>
+</g>
+</svg>
