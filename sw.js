@@ -1,5 +1,5 @@
 // استودیوی مشاور — کارِ آفلاین. با هر نسخه‌ی تازه، عددِ V را عوض کن.
-const V = 'studio-8.5';
+const V = 'studio-8.6';
 const CORE = ['./', 'index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(V).then(c => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('studio-') && k !== V).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
