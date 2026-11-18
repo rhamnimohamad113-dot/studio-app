@@ -6,6 +6,7 @@ self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Pr
 self.addEventListener('fetch', e => {
   const r = e.request; if (r.method !== 'GET') return;
   if (new URL(r.url).pathname.includes('/var-e-del/')) return; // اپِ «ورِ دل» سرویس‌ورکر خودش رو داره
+  if (new URL(r.url).pathname.includes('/league/')) return; // صفحه‌ی لیگ دانش‌آموزان: همیشه تازه از شبکه (هر روز به‌روز می‌شود)
   const page = r.mode === 'navigate';
   // صفحه: اول شبکه (تا نسخه‌ی تازه بیاید)، اگر نت نبود از حافظه. بقیه: اول حافظه.
   e.respondWith(page

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#0C0F32">
+<title>لیگ فضانوردان</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#0C0F32;--bg2:#27196A;--card:rgba(255,255,255,.08);--bd:rgba(255,255,255,.16);--tx:#fff;--mu:#B9C0FF;--gold:#FFD76A;--ok:#1FBF75;--bad:#F0506E;--ac:#7C8BFF}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0}
+html{background:#14103F}body{font-family:Vazirmatn,Tahoma,'Segoe UI',sans-serif;color:var(--tx);background:linear-gradient(160deg,var(--bg1),var(--bg2) 55%,#4A2A8C);min-height:100vh;line-height:1.6}
+#stars{position:fixed;inset:0;pointer-events:none;opacity:.55;background-image:radial-gradient(#fff 1px,transparent 1.6px),radial-gradient(#FFD76A 1px,transparent 1.6px),radial-gradient(#9fb0ff 1px,transparent 1.6px);background-size:140px 140px,210px 210px,90px 90px;background-position:12px 30px,90px 110px,40px 70px}
+.wrap{position:relative;max-width:760px;margin:0 auto;padding:18px 16px 60px}
+.hero{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0 4px}
+.hero h1{margin:0;font-size:30px;font-weight:900;color:var(--gold);line-height:1.2}.hero p{margin:6px 0 0;color:var(--mu);font-size:14px}
+.pill{display:inline-block;background:var(--card);border:1px solid var(--bd);border-radius:999px;padding:4px 12px;font-size:12.5px;color:#E6E9FF;margin-top:10px}
+.hero .sc{flex:none;margin-bottom:-14px}
+.find{margin:18px 0 12px;position:relative}.find input{width:100%;font:inherit;color:#fff;background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:13px 16px 13px 16px;outline:none;backdrop-filter:blur(10px)}.find input::placeholder{color:#9AA3E8}.find input:focus{border-color:var(--ac);box-shadow:0 0 0 3px rgba(124,139,255,.25)}
+.sug{position:absolute;inset-inline:0;top:100%;margin-top:6px;background:#1B1D55;border:1px solid var(--bd);border-radius:16px;overflow:hidden;z-index:20;box-shadow:0 14px 40px rgba(0,0,0,.4)}.sug button{display:flex;gap:10px;align-items:center;width:100%;text-align:right;background:none;border:0;color:#fff;font:inherit;padding:9px 14px;cursor:pointer}.sug button:hover{background:rgba(255,255,255,.08)}
+.me{background:linear-gradient(135deg,rgba(255,215,106,.22),rgba(124,139,255,.18));border:1px solid rgba(255,215,106,.45);border-radius:24px;padding:16px;margin:0 0 14px;display:flex;gap:14px;align-items:center}
+.me .big{font-size:46px;font-weight:900;color:var(--gold);line-height:1}.me small{display:block;color:var(--mu);font-size:12px}.me b{font-size:17px}
+.aw{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:0 0 14px}
+.awc{display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:10px 12px;backdrop-filter:blur(8px)}.awc span{display:block;font-size:11.5px;color:var(--mu)}.awc b{font-size:14px}.awc em{font-style:normal;font-size:11.5px;color:#9fd0ff}
+.pod{direction:ltr;display:flex;justify-content:center;align-items:flex-end;gap:10px;margin:8px 0 18px}
+.pc{direction:rtl;display:flex;flex-direction:column;align-items:center;text-align:center;width:31%;cursor:pointer}.pc b{font-size:13.5px;margin-top:2px}.pc span{font-size:12px;color:var(--mu)}
+.stp{width:100%;border-radius:16px 16px 0 0;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:900;color:#fff;margin-top:6px;text-shadow:0 2px 0 rgba(0,0,0,.2)}
+.tabs{display:flex;gap:6px;background:rgba(255,255,255,.07);border-radius:16px;padding:5px;margin:0 0 12px;overflow:auto}.tabs button{flex:1;white-space:nowrap;font:inherit;font-size:13px;font-weight:600;color:var(--mu);background:none;border:0;border-radius:12px;padding:9px 12px;cursor:pointer}.tabs button.on{background:#fff;color:#2A2370}
+.row{display:flex;align-items:center;gap:11px;background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:10px 12px;margin-bottom:8px;cursor:pointer;backdrop-filter:blur(8px);transition:transform .15s}.row:active{transform:scale(.985)}
+.row.t1{background:linear-gradient(90deg,rgba(255,226,122,.28),rgba(240,162,27,.06));border-color:rgba(255,226,122,.7)}.row.t2{background:linear-gradient(90deg,rgba(220,226,245,.24),rgba(167,176,201,.05));border-color:rgba(220,226,245,.55)}.row.t3{background:linear-gradient(90deg,rgba(247,192,142,.26),rgba(201,118,58,.05));border-color:rgba(247,192,142,.6)}
+.row.me1{outline:2px solid var(--gold)}
+.rk{width:40px;flex:none;text-align:center;font-weight:900;font-size:19px}.nm{flex:1;min-width:0}.nm b{display:block;font-size:15.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.nm small{color:var(--mu);font-size:12px}
+.pt{text-align:center;min-width:62px}.pt b{display:block;font-size:20px;font-weight:900;color:var(--gold);line-height:1.1}.pt small{color:var(--mu);font-size:10.5px}
+.dl{min-width:48px;text-align:center;font-weight:800;font-size:12.5px;border-radius:999px;padding:3px 8px}.dl.up{background:rgba(31,191,117,.2);color:#6CF0B0}.dl.dn{background:rgba(240,80,110,.2);color:#FF93A8}.dl.nw{background:rgba(124,139,255,.25);color:#C3CBFF}.dl.eq{color:#8890C8}
+.fl{color:#FFB07A;font-size:12px;font-weight:700}
+.bar{height:9px;border-radius:9px;background:rgba(255,255,255,.14);overflow:hidden;margin:6px 0}.bar i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,#7C8BFF,#FFD76A)}
+.empty{text-align:center;color:var(--mu);padding:40px 10px}
+.rules{margin-top:22px;background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:14px 16px;font-size:13px;color:#DDE1FF}.rules h3{margin:0 0 6px;font-size:15px;color:var(--gold)}.rules li{margin:3px 0}
+.foot{text-align:center;color:#8890C8;font-size:12px;margin-top:20px}
+.mbg{position:fixed;inset:0;background:rgba(5,6,25,.7);backdrop-filter:blur(6px);z-index:50;display:flex;align-items:flex-end;justify-content:center}
+.md{width:100%;max-width:560px;max-height:88vh;overflow:auto;background:linear-gradient(170deg,#241A6B,#14103F);border:1px solid var(--bd);border-radius:28px 28px 0 0;padding:18px 18px 28px;animation:up .25s ease}@keyframes up{from{transform:translateY(40px);opacity:0}}
+.md h2{margin:0;font-size:20px}.mh{display:flex;gap:14px;align-items:center}.x{margin-inline-start:auto;background:rgba(255,255,255,.12);border:0;color:#fff;border-radius:50%;width:34px;height:34px;font-size:16px;cursor:pointer}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}.g3 div{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:10px;text-align:center}.g3 b{display:block;font-size:20px;color:var(--gold)}.g3 small{color:var(--mu);font-size:11.5px}
+.dd{display:flex;justify-content:space-between;gap:8px;padding:8px 2px;border-bottom:1px solid rgba(255,255,255,.1);font-size:13.5px}.dd:last-child{border:0}.dd span{color:var(--mu)}
+.bds{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.bds span{display:flex;gap:6px;align-items:center;background:var(--card);border:1px solid var(--bd);border-radius:999px;padding:3px 12px 3px 6px;font-size:12.5px}
+@media(max-width:520px){.hero h1{font-size:25px}.hero .sc svg{width:130px;height:auto}}
+</style></head>
+<body><div id="stars"></div><div class="wrap" id="app"></div>
+<script>const LG_ST={"astronaut":"st/astronaut.png","rocket":"st/rocket.png","trophy":"st/trophy.png","fire":"st/fire.png","crown":"st/crown.png","sunrise":"st/sunrise.png","sun":"st/sun.png","star":"st/star.png","glow":"st/glow.png","target":"st/target.png","bolt":"st/bolt.png","m1":"st/m1.png","m2":"st/m2.png","m3":"st/m3.png","alarm":"st/alarm.png","earth":"st/earth.png","moon":"st/moon.png","planet":"st/planet.png","ufo":"st/ufo.png","satellite":"st/satellite.png","shooting":"st/shooting.png","hundred":"st/hundred.png","party":"st/party.png","sparkles":"st/sparkles.png","muscle":"st/muscle.png","rooster":"st/rooster.png","sleep":"st/sleep.png","chart":"st/chart.png","medal":"st/medal.png","books":"st/books.png","clap":"st/clap.png","gem":"st/gem.png","cool":"st/cool.png"},LG_SUITS=["#6C7CFF","#FFB02E","#2FC6A0","#FF6B9A","#9B7BFF","#FF8A4C","#2DB4E8"],LG_VISOR=["#2B2170","#1B3A78","#3A1F6B","#17476A"],LG_BADGE={"crown":"crown","flame":"fire","sun":"sunrise","rocket":"rocket","star":"glow","target":"target","bolt":"muscle","m1":"m1","m2":"m2","m3":"m3"},LG_AV=["rocket","planet","ufo","satellite","moon","earth","shooting","gem","rooster","sun","glow","cool"],LG_AVBG=[["#E8ECFF","#C9D2FF"],["#FFF1D6","#FFD99A"],["#DDF7EE","#A9E9D2"],["#FFE3EC","#FFB9CF"],["#EDE6FF","#CDBDFF"],["#E0F3FF","#A8DBFF"]];const lgHash=(s)=>{ let h = 7; String(s).split('').forEach(c=>{ h = (h * 31 + c.charCodeAt(0)) >>> 0; }); return h; };
+function lgMix(hex, t){ const n = parseInt(String(hex).replace('#', ''), 16), f = (v)=>Math.max(0, Math.min(255, Math.round(t >= 0 ? v + (255 - v) * t : v * (1 + t)))); const r = f(n >> 16), g = f((n >> 8) & 255), b = f(n & 255); return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1); }
+function lgSticker(id){ return ''; }
+function lgImg(name, x, y, w, extra){ const u = LG_ST[name]; return u ? `<image href="${u}" x="${x}" y="${y}" width="${w}" height="${w}" preserveAspectRatio="xMidYMid meet"${extra || ''}/>` : ''; }
+function lgAstro(o){
+  o = o || {}; const pose = o.pose || 'wave', sz = o.size || 120;
+  const ex = {wave: lgImg('sparkles', 0, 6, 64), trophy: lgImg('trophy', 118, 0, 84), flag: lgImg('medal', 132, 8, 66), sleep: lgImg('alarm', 0, 120, 70) + lgImg('sleep', 136, 2, 60), sit: lgImg('sparkles', 146, 6, 52), thumb: lgImg('muscle', 130, 96, 70)}[pose] || '';
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 220" width="${sz}" height="${(sz * 220 / 210).toFixed(1)}" class="lg-astro">${lgImg('astronaut', 22, 28, 176)}${ex}</svg>`;
+}
+function lgAvatar(key, size){
+  const h = lgHash(key), st = LG_AV[h % LG_AV.length], bg = LG_AVBG[(h >>> 4) % LG_AVBG.length], id = 'w' + (h % 9999) + Math.random().toString(36).slice(2, 6);
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="${size || 34}" height="${size || 34}" class="lg-av"><defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${bg[0]}"/><stop offset="1" stop-color="${bg[1]}"/></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#${id})" stroke="#fff" stroke-width="3"/>${lgImg(st, 12, 10, 76)}</svg>`;
+}
+function lgScene(kind, pose, size){
+  const moon = kind === 'moon', s = size || 220;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 250" width="${s}" height="${(s * 250 / 240).toFixed(1)}" class="lg-scene">${lgImg('sparkles', 4, 34, 42)}${lgImg('rocket', 178, 4, 56)}${lgImg(moon ? 'moon' : 'earth', 24, 116, 192)}${lgImg('astronaut', 58, 36, 124)}</svg>`;
+}
+function lgBadge(kind, size, txt){ const n = LG_BADGE[kind] || 'glow'; return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="${size || 40}" height="${size || 40}" class="lg-bdg">${lgImg(n, 0, 0, 100)}</svg>`; }</script>
+<script>window.__LEAGUE__={"v":1,"updated":1795010234428,"updatedFa":"","quiz":{},"n":0,"dayList":[],"students":[],"awards":[],"rules":[]};</script>
+<script>
+(function(){
+const fa=n=>String(n).replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]),E=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const hm=m=>m==null?'—':fa(String(Math.floor(m/60)).padStart(2,'0')+':'+String(Math.round(m%60)).padStart(2,'0'));
+let D=window.__LEAGUE__,tab='total',me=null;try{me=localStorage.getItem('lgme')}catch(e){}
+const $=s=>document.querySelector(s);
+const arrow=r=>r.isNew?'<span class="dl nw">جدید</span>':r.delta>0?`<span class="dl up">▲ ${fa(r.delta)}</span>`:r.delta<0?`<span class="dl dn">▼ ${fa(-r.delta)}</span>`:'<span class="dl eq">—</span>';
+function spark(v,w,h){const V=v.filter(x=>x!=null);if(V.length<2)return'';const mn=Math.min(...V),mx=Math.max(...V),X=i=>6+i*(w-12)/(v.length-1),Y=x=>6+((x-mn)/((mx-mn)||1))*(h-12);const pts=v.map((x,i)=>x==null?null:[X(i),Y(x)]).filter(Boolean);return`<svg style="width:100%;height:auto;display:block" viewBox="0 0 ${w} ${h}"><polyline fill="none" stroke="#7C8BFF" stroke-width="3" stroke-linejoin="round" points="${pts.map(p=>p[0].toFixed(1)+','+p[1].toFixed(1)).join(' ')}"/>${pts.map((p,i)=>`<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="${i==pts.length-1?5:3}" fill="${i==pts.length-1?'#FFD76A':'#7C8BFF'}"/>`).join('')}</svg>`}
+function pose(r){return r.rank==1?'trophy':r.rank<=3?'thumb':r.streak>=3?'flag':'wave'}
+function view(){
+  const S=D.students||[];if(!S.length){$('#app').innerHTML=`<div class="hero"><div><h1>لیگ فضانوردان</h1><p>هنوز نتیجه‌ای ثبت نشده؛ بعد از اولین آزمونک اینجا پر می‌شود.</p></div><div class="sc">${lgScene('moon','wave',170)}</div></div>`;return}
+  const q=D.quiz||{},m=S.find(s=>String(s.i)===String(me));
+  let list=S.slice();
+  if(tab=='today')list=S.filter(s=>s.today!=null).sort((a,b)=>b.today-a.today||b.total-a.total);
+  else if(tab=='early')list=S.filter(s=>s.avgStart!=null).sort((a,b)=>b.earlyPts-a.earlyPts||a.avgStart-b.avgStart);
+  else if(tab=='streak')list=S.slice().sort((a,b)=>b.streak-a.streak||b.best-a.best||b.parts-a.parts);
+  const sub=r=>tab=='today'?`${fa(r.todayC)} درست — شروع ${hm(r.todayM)}`:tab=='early'?`میانگین شروع ${hm(r.avgStart)}`:tab=='streak'?`بهترین رشته ${fa(r.best)} روز`:E(r.level);
+  const val=r=>tab=='today'?'+'+fa(r.today):tab=='early'?fa(r.earlyPts):tab=='streak'?fa(r.streak):fa(r.total);
+  const lab=tab=='today'?'امتیاز امروز':tab=='early'?'امتیاز سحر':tab=='streak'?'روز پیوسته':'امتیاز';
+  const top=S.slice(0,3),pod=top.length==3?[1,0,2].map((i,p)=>{const r=top[i],h=[96,130,72][p],c=['#C9CFE0','#F4C542','#D8955A'][i];return`<div class="pc" onclick="openS(${r.i})">${i==0?'<div style="margin-bottom:-6px">'+lgBadge('crown',30)+'</div>':''}${lgAvatar(r.name+r.i,i==0?78:64)}<b>${E(r.name)}</b><span>${fa(r.total)} امتیاز</span><div class="stp" style="height:${h}px;background:linear-gradient(180deg,${c},${c}AA)">${fa(i+1)}</div></div>`}).join(''):'';
+  $('#app').innerHTML=`<div class="hero"><div><h1>لیگ فضانوردان</h1><p>آزمونک ${fa(q.num)} — ${E(q.fa)}</p><span class="pill">${fa(q.n)} فضانورد شرکت کردند</span><span class="pill">به‌روزرسانی: ${E(D.updatedFa||'')}</span></div><div class="sc">${lgScene('earth','sit',170)}</div></div>
+  <div class="find"><input id="fi" placeholder="🔎 اسم خودت را بنویس تا جایگاهت را ببینی…" autocomplete="off"><div id="sg"></div></div>
+  ${m?`<div class="me" onclick="openS(${m.i})">${lgAvatar(m.name+m.i,64)}<div style="flex:1"><small>جایگاه تو</small><b>${E(m.name)}</b><div class="bar"><i style="width:${m.lvlPct}%"></i></div><small>${E(m.level)}${m.lvlNext?' — '+fa(m.lvlNext.at-m.total>0?m.lvlNext.at-m.total:0)+' امتیاز تا «'+E(m.lvlNext.name)+'»':''}</small></div><div style="text-align:center"><div class="big">${fa(m.rank)}</div>${arrow(m)}</div></div>`:''}
+  <div class="aw">${(D.awards||[]).map(a=>`<div class="awc">${lgBadge(a.kind,42)}<div><span>${E(a.title)}</span><b>${E(a.name)}</b><em>${E(a.text)}</em></div></div>`).join('')}</div>
+  ${tab=='total'?`<div class="pod">${pod}</div>`:''}
+  <div class="tabs">${[['total','🏆 لیگ'],['today','📅 امروز'],['early','🌅 سحرخیزها'],['streak','🔥 پیوستگی']].map(t=>`<button class="${tab==t[0]?'on':''}" onclick="setTab('${t[0]}')">${t[1]}</button>`).join('')}</div>
+  ${list.length?list.map((r,i)=>`<div class="row ${tab=='total'&&r.rank<4?'t'+r.rank:''} ${m&&m.i==r.i?'me1':''}" onclick="openS(${r.i})"><div class="rk">${tab=='total'&&r.rank<=3?lgBadge('m'+r.rank,36,fa(r.rank)):fa(tab=='total'?r.rank:i+1)}</div>${lgAvatar(r.name+r.i,44)}<div class="nm"><b>${E(r.name)}</b><small>${sub(r)}${r.streak>=2&&tab!='streak'?` <span class="fl">🔥${fa(r.streak)}</span>`:''}</small></div><div class="pt"><b>${val(r)}</b><small>${lab}</small></div>${tab=='total'?arrow(r):''}</div>`).join(''):'<div class="empty">برای این بخش هنوز اطلاعاتی نیست.</div>'}
+  <div class="rules"><h3>امتیازها چطور حساب می‌شود؟</h3><ul style="margin:0;padding-inline-start:18px">${(D.rules||[]).map(x=>`<li>${E(x)}</li>`).join('')}</ul></div>
+  <div class="foot">هر روز بعد از پایان آزمونک به‌روز می‌شود 🚀 — آزمونک ساعت ۶ تا ۱۰ صبح</div>`;
+  const fi=$('#fi');fi.oninput=()=>{const v=fi.value.trim();if(v.length<2){$('#sg').innerHTML='';return}const r=S.filter(s=>s.name.includes(v)).slice(0,6);$('#sg').innerHTML=r.length?`<div class="sug">${r.map(s=>`<button onclick="pick(${s.i})">${lgAvatar(s.name+s.i,30)}<span>${E(s.name)}</span><small style="margin-inline-start:auto;color:#B9C0FF">رتبه ${fa(s.rank)}</small></button>`).join('')}</div>`:''}
+}
+window.setTab=t=>{tab=t;view()};
+window.pick=i=>{me=String(i);try{localStorage.setItem('lgme',me)}catch(e){}view();window.scrollTo({top:0,behavior:'smooth'})};
+window.closeS=()=>{const m=$('.mbg');if(m)m.remove()};
+window.openS=i=>{const r=(D.students||[]).find(s=>s.i==i);if(!r)return;closeS();
+  const days=(r.days||[]).map((d,k)=>d?`<div class="dd"><b>آزمونک ${fa(D.dayList[k].num)}</b><span>${fa(d.c)} درست — ${fa(d.w)} غلط — شروع ${hm(d.m)}</span><b style="color:#FFD76A">${d.tot>0?'+':''}${fa(d.tot)}</b></div>`:`<div class="dd"><b>آزمونک ${fa(D.dayList[k].num)}</b><span>شرکت نکرد</span><b>—</b></div>`).reverse().join('');
+  const el=document.createElement('div');el.className='mbg';el.onclick=e=>{if(e.target==el)closeS()};
+  el.innerHTML=`<div class="md"><div class="mh">${lgAstro({pose:pose(r),size:112,acc:['#6C7CFF','#FFB02E','#2FC6A0','#FF6B9A','#9B7BFF'][r.i%5]})}<div><h2>${E(r.name)}</h2><div style="color:#B9C0FF;font-size:13px">${E(r.title)}</div><div style="margin-top:6px">${arrow(r)}</div></div><button class="x" onclick="closeS()">✕</button></div>
+  <div class="g3"><div><b>${fa(r.rank)}</b><small>رتبه</small></div><div><b>${fa(r.total)}</b><small>امتیاز کل</small></div><div><b>${fa(r.streak)}</b><small>روز پیوسته</small></div><div><b>${fa(r.parts)}/${fa(D.n)}</b><small>شرکت</small></div><div><b>${fa(r.best)}</b><small>بهترین رشته</small></div><div><b>${hm(r.avgStart)}</b><small>میانگین شروع</small></div></div>
+  <div style="color:#B9C0FF;font-size:13px">سطح: <b style="color:#fff">${E(r.level)}</b>${r.lvlNext?' — '+fa(Math.max(0,r.lvlNext.at-r.total))+' امتیاز تا «'+E(r.lvlNext.name)+'»':' — بالاترین سطح 🎉'}</div><div class="bar"><i style="width:${r.lvlPct}%"></i></div>
+  ${(r.badges||[]).length?`<div class="bds">${r.badges.map(b=>`<span>${lgBadge(b[0],26)}${E(b[1])}</span>`).join('')}</div>`:''}
+  ${(r.rankHist||[]).filter(x=>x!=null).length>1?`<div style="margin:14px 0 4px;color:#B9C0FF;font-size:13px">روند رتبه (هرچه بالاتر، رتبه بهتر)</div>${spark((r.rankHist||[]).map(x=>x==null?null:-x),480,80)}`:''}
+  <div style="margin-top:12px">${days}</div></div>`;
+  document.body.appendChild(el)};
+function boot(){view();fetch('league-data.json?'+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.students){D=j;view()}}).catch(()=>{})}
+boot();
+})();
+</script></body></html>
