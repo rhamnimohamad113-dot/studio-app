@@ -1,5 +1,5 @@
 // ورِ دل — کار آفلاین. با هر نسخه‌ی تازه، عدد V رو عوض کن.
-const V = 'vardel-7';
+const V = 'vardel-8';
 const CORE = ['./', 'index.html', 'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png', 'favicon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(V).then(c => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('vardel-') && k !== V).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
